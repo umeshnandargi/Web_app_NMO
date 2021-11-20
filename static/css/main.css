@@ -1,0 +1,111 @@
+body {
+    background-color: slateblue;
+    text-align: center;
+}
+
+p{
+    color: #99eedf;
+    font-family:sans-serif;
+    font-size: 1.2em;
+    margin: 20px;
+}
+
+img{
+    margin: 60px 0 0 0;
+    width: 250px;
+    border-radius:50px ;
+}
+
+input{
+    width: 300px;
+    height: 50px;
+    margin: 20px;
+    border: none;
+    border-radius: 10px;
+    font-family: Shanti;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+input:focus{
+    border:solid 5px #00FFCE;
+}
+
+#submit {
+    background-color:palevioletred;
+    color: white;
+    width: 200px;
+}
+
+#submit:hover{
+    background-color: mediumvioletred;
+    cursor: pointer;
+}
+
+#submit:focus{
+    border:solid 5px #e45c5cd2;
+}
+
+h1 {
+    color:#ebc999;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    margin: 20px;
+}
+.gl2p{
+    color: #a2eacb ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    margin: 20px;
+}
+
+.gl3p{
+    color: #a2eacb;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    margin: 20px;
+}
+
+.sim13{
+    color: #a2eacb;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    margin: 20px;
+}
+
+.sim38{
+    color: #a2eacb;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    margin: 20px;
+}
+
+.trap{
+    color: #a2eacb;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    margin: 20px;
+}
+
+label{
+    display: inline-block;
+    width: 200px;
+    color: rgb(255, 208, 0);
+}
+
+div{
+    padding: 10px 10px 10px 10px;
+    text-align:center;
+}
+
+.apk{
+    color: #00ffd5c0;
+}
+
+.apk:hover{
+    color: #00ffd57e;
+}
+
+h3{
+    color: #ebc999;
+}
