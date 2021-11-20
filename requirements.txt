@@ -11,16 +11,11 @@ idna==3.3
 itsdangerous==2.0.1
 Jinja2==3.0.3
 Kivy==2.0.0
-kivy-deps.angle==0.3.0
-kivy-deps.glew==0.3.0
-kivy-deps.sdl2==0.3.1
 Kivy-Garden==0.1.4
 MarkupSafe==2.0.1
 openpyxl==3.0.7
 Pygments==2.10.0
-pypiwin32==223
 python-dateutil==1.5
-pywin32==302
 requests==2.26.0
 urllib3==1.26.7
 Werkzeug==2.0.2
