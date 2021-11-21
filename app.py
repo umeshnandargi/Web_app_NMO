@@ -19,7 +19,7 @@ def gl2p():
         a, b = (float(eval(ul)) - float(eval(ll))) / 2, (float(eval(ul))+ float(eval(ll))) / 2
         u1, u2 = -a / (3 ** 0.5) + b, a / (3 ** 0.5) + b
         I = a * (function(u1) + function(u2))
-        flash(f'Integration of {fun} from {ll} to {ul} using GL2P method is:{I}')
+        flash(f'Integration of {fun} from {ll} to {ul} using GL2P method is {I}')
         return render_template("gl2p.html", fun = fun)
     except:
         fun = False
@@ -36,7 +36,7 @@ def gl3p():
         a, b = (float(eval(ul)) - float(eval(ll))) / 2, (float(eval(ul))+ float(eval(ll))) / 2
         u1, u2, u3 = a * (3 / 5) ** 0.5 + b, b, -a * (3 / 5) ** 0.5 + b
         I = ((5 / 9) * (function(u1)) + (8 / 9) * (function(u2)) + (5 / 9) * (function(u3))) * a
-        flash(f'Integration of {fun} from {ll} to {ul} using GL3P method is:{I}')
+        flash(f'Integration of {fun} from {ll} to {ul} using GL3P method is {I}')
         return render_template("gl3p.html", fun = fun)
     except:
         fun = False
@@ -60,7 +60,7 @@ def sim13():
             sum = sum + function(x1) + 4 * function(x1 + h) + function(x1 + 2 * h)
             x1 += 2 * h
         I = sum * h / 3
-        flash(f"Integration of {fun} within limits {ll} to {ul} with {n} no. of strips using Simpson's 1/3rd Rule is: {I}")
+        flash(f"Integration of {fun} within limits {ll} to {ul} with {n} no. of strips using Simpson's 1/3rd Rule is {I}")
         return render_template("sim13.html", fun = fun)
     except:
         fun = False
@@ -83,7 +83,7 @@ def sim38():
             sum = sum + function(x1) + 3 * function(x1 + h) + 3 * function(x1 + 2 * h) + function(x1 + 3 * h)
             x1 += 3 * h
         I = sum * h * 3 / 8
-        flash(f"Integration of {fun} within limits {ll} to {ul} with {n} no. of strips using Simpson's 3/8 Rule is: {I}")
+        flash(f"Integration of {fun} within limits {ll} to {ul} with {n} no. of strips using Simpson's 3/8 Rule is {I}")
         return render_template("sim38.html", fun = fun)
     except:
         fun = False
@@ -107,7 +107,7 @@ def trap():
             sum = sum + (h / 2) * (function(x1) + function(x1 + h))
             x1 += h
         I = sum
-        flash(f"Integration of {fun} within limits {ll} to {ul} with {n} no. of strips using Trapezoidal Rule is: {I}")
+        flash(f"Integration of {fun} within limits {ll} to {ul} with {n} no. of strips using Trapezoidal Rule is {I}")
         return render_template("trap.html", fun = fun)
     except:
         fun = False
