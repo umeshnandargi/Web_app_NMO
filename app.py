@@ -40,7 +40,7 @@ def gl3p():
         return render_template("gl3p.html", fun = fun)
     except:
         fun = False
-        return render_template("gl2p.html", fun = fun)
+        return render_template("gl3p.html", fun = fun)
 
 
 @app.route("/sim13", methods = ["POST", "GET"])
